@@ -32,7 +32,11 @@ Through my code review and follow-up enhancements, I strove to meet the followin
 
 ## Code Review
 
-Text for formatting.
+<p style="text-indent: 55px;">
+My code review is one video made up of three distinct parts, each analyzing a distinct artifact for errors, security vulnerabilities, and improveable functionalities. The key elements of the review for each artifact are an explanation of existing functionality, an analysis of the code structure, and a listing of possible enhancements to be made.
+</p>
+
+((Insert link to code review here))
 
 ## Artifact 1: Software Engineering and Design
 
