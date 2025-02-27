@@ -9,3 +9,5 @@ theme: minima
 # Customization
 show_excerpts: true  # Enables post previews instead of full content
 permalink: /:title/  # Simplifies URL structure
+
+# Navigation?
