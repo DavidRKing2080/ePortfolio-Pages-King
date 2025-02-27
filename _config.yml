@@ -1,4 +1,19 @@
+# Settings
+title: "David King's ePortfolio"
+author: "David King"
+description: "A showcase of my bachelor's degree work, including all work for the CS 499 Capstone Course."
+
+# Theme
 theme: minima
-title: Test Title
-author: David King
-description: Test descript.
+
+# Customization
+
+show_excerpts: true  # Enables post previews instead of full content
+permalink: /:title/  # Simplifies URL structure
+
+# Navigation (If using Minima 3.0+, you can add a navigation bar)
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+  - contact.md
