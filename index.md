@@ -1,5 +1,7 @@
 ---
-title: This is a test title for David King's blog (change pending)
+title: David King's ePortfolio
 ---
+
+## CS 499 Computer Science Capstone
 
 I'm currently testing the homepage feature by writing a faux description. Please ignore blah blah.
