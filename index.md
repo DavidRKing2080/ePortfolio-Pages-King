@@ -56,6 +56,11 @@ My intended course outcome with these changes was the development of a security 
 During the process of enhancement, I was able to see the effectiveness of modularization. Separating reusable logic into helper functions leaves the code easier to maintain and reduces redundancy. The addition of multiple data types and extreme values also ensured that the program functioned correctly under different conditions. There were some limitations that came with difficulty, such as triggering certain errors without getting silent. These were overcome with structured error handling and more detailed exceptions.
 </p>
 
+- [Origin artifact files](https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Origin%20Artifacts/Origin%20Artifact%201/CS%20405%20Module%201%20Assignment_King)
+- [Origin build code](https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Origin%20Artifacts/Origin%20Artifact%201/CS%20405%20Module%201%20Assignment_King/CS%20405%20Module%201%20Assignment_King.cpp)
+- [Enhanced artifact files](https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Enhanced%20Artifacts/Artifact%201/CS%20405%20Module%201%20Assignment_King)
+- [Enhanced artifact code](https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Enhanced%20Artifacts/Artifact%201/CS%20405%20Module%201%20Assignment_King/CS%20405%20Module%201%20Assignment_King.cpp)
+
 ## Artifact 2: Algorithms and Data Structures
 
 <p style="text-indent: 55px;">
