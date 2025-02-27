@@ -17,7 +17,7 @@ The Southern New Hampshire University degree program refined and expanded my ski
 <p style="text-indent: 55px;">
 My ePortfolio includes three artifacts that demonstrate improvement in the categories of software design, data structures, and databases. The first is a buffer overflow checker that has been improved with a wider range of checks, more robust error handling, and clearer error messaging. The second artifact is a hash table that was recoded with improved collision handling and dynamic resizing. Finally the third artifact was a database manager that was improved with indexing and input validation, as well as restructured to lend modularity.
 
-## CS 499 Course Outcomes
+### CS 499 Course Outcomes
 
 Through my code review and follow-up enhancements, I strove to meet the following outcomes for the course:
 
@@ -27,11 +27,11 @@ Through my code review and follow-up enhancements, I strove to meet the followin
 -Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals
 -Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources
 
-## Code Review
+### Code Review
 
 Text for formatting.
 
-## Artifact 1: Software Engineering and Design
+### Artifact 1: Software Engineering and Design
 
 <p style="text-indent: 55px;">
 The enhanced artifact is a buffer overflow checker that was created back in Module One of CS 405 (Secure Coding). Its functionality includes checking for overflow and underflow using a list of common variable types.
@@ -46,7 +46,7 @@ My intended course outcome with these changes was the development of a security 
 During the process of enhancement, I was able to see the effectiveness of modularization. Separating reusable logic into helper functions leaves the code easier to maintain and reduces redundancy. The addition of multiple data types and extreme values also ensured that the program functioned correctly under different conditions. There were some limitations that came with difficulty, such as triggering certain errors without getting silent. These were overcome with structured error handling and more detailed exceptions.
 
 
-## Artifact 2: Algorithms and Data Structures
+### Artifact 2: Algorithms and Data Structures
 
 <p style="text-indent: 55px;">
 The enhanced artifact is a hash table implementation originally written for CS 300 (Structures and Algorithms, Analysis and Design). It makes use of a hash table and CSV parser to efficiently retrieve, read, parse, store, and display bid data from a CSV sheet.
@@ -60,7 +60,7 @@ Three course outcomes were focused on for this implementation. Those were effici
 <p style="text-indent: 55px;">
 Linear probing has an issue with excessive clustering, so implementation required testing to determine when resizing should occur. Attention was paid to performance, to decide which hashing strategy was best optimized for the showcased artifact. A major lesson learned was the effectiveness of refactoring. The new implementation uses far fewer lines of code and overall represents a better implementation for the artifact’s intended functionality.
 
-## Artifact 3: Databases
+### Artifact 3: Databases
 
 <p style="text-indent: 55px;">
 The enhanced artifact is a database manager for an animal shelter. It was written as the final project for CS 340 (Advanced Programming Concepts). The manager uses MongoDB to manage CRUD operations for the shelter’s database. These operations are standard for databases and include storage, retrieval, updating, and deletion.
