@@ -1,5 +1,5 @@
 ---
-title: David King's ePortfolio
+layout: default
 ---
 
 ## CS 499 Computer Science Capstone
