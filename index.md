@@ -29,6 +29,8 @@ Through my code review and follow-up enhancements, I strove to meet the followin
 
 ## Code Review
 
+Text for formatting.
+
 ## Artifact 1: Software Engineering and Design
 
 <p style="text-indent: 55px;">
