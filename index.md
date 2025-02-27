@@ -36,7 +36,7 @@ Through my code review and follow-up enhancements, I strove to meet the followin
 My code review is one video made up of three distinct parts, each analyzing a distinct artifact for errors, security vulnerabilities, and improveable functionalities. The key elements of the review for each artifact are an explanation of existing functionality, an analysis of the code structure, and a listing of possible enhancements to be made.
 </p>
 
-((Insert link to code review here))
+[Full Code Review](https://youtu.be/QpnPdSksR3w)
 
 ## Artifact 1: Software Engineering and Design
 
@@ -79,6 +79,11 @@ Three course outcomes were focused on for this implementation. Those were effici
 Linear probing has an issue with excessive clustering, so implementation required testing to determine when resizing should occur. Attention was paid to performance, to decide which hashing strategy was best optimized for the showcased artifact. A major lesson learned was the effectiveness of refactoring. The new implementation uses far fewer lines of code and overall represents a better implementation for the artifact’s intended functionality.
 </p>
 
+- [Origin artifact files]()
+- [Origin build code]()
+- [Enhanced artifact files]()
+- [Enhanced artifact code]()
+
 ## Artifact 3: Databases
 
 <p style="text-indent: 55px;">
@@ -96,3 +101,8 @@ Originally, only two course outcomes were intended for this implementation, thos
 <p style="text-indent: 55px;">
 Originally, the plan was to add an advanced search function to the artifact. However, this would have required tampering with more than a single artifact. Given that the objective is to show straightforward enhancements to artifact functionality, this change was decided against. Moreover, fully refactoring the code required testing different versions for implementation and selecting the best one. Overall, the final artifact is more stable, secure, and efficient than now when compared to where it was in the beginning of the process. It will serve as a good display of my ability to engage in backend development, especially in regard to databases.
 </p>
+
+- [Origin artifact files]()
+- [Origin build code]()
+- [Enhanced artifact files]()
+- [Enhanced artifact code]()
