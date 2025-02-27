@@ -4,7 +4,7 @@ title: David King's ePortfolio
 
 ## Welcome!
 
-This ePortfolio showcases the learning and professional growth I have engaged in over the course of studying for my Bachelor's degree.
+This ePortfolio showcases the learning and professional growth I have engaged in over the course of studying for my bachelor's degree.
 
 ## Professional Self-Assessment
 
