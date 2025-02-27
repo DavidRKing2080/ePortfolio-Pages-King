@@ -7,6 +7,5 @@ description: "A showcase of my bachelor's degree work, including all work for th
 theme: minima
 
 # Customization
-
 show_excerpts: true  # Enables post previews instead of full content
 permalink: /:title/  # Simplifies URL structure
