@@ -79,10 +79,10 @@ Three course outcomes were focused on for this implementation. Those were effici
 Linear probing has an issue with excessive clustering, so implementation required testing to determine when resizing should occur. Attention was paid to performance, to decide which hashing strategy was best optimized for the showcased artifact. A major lesson learned was the effectiveness of refactoring. The new implementation uses far fewer lines of code and overall represents a better implementation for the artifact’s intended functionality.
 </p>
 
-- [Origin artifact files]()
-- [Origin build code]()
-- [Enhanced artifact files]()
-- [Enhanced artifact code]()
+- [Origin artifact files](https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Origin%20Artifacts/Origin%20Artifact%202/HashTable)
+- [Origin build code](https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Origin%20Artifacts/Origin%20Artifact%202/HashTable/HashTable.cpp)
+- [Enhanced artifact files](https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Enhanced%20Artifacts/Artifact%202/HashTable)
+- [Enhanced artifact code](https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Enhanced%20Artifacts/Artifact%202/HashTable/HashTable.cpp)
 
 ## Artifact 3: Databases
 
@@ -102,7 +102,7 @@ Originally, only two course outcomes were intended for this implementation, thos
 Originally, the plan was to add an advanced search function to the artifact. However, this would have required tampering with more than a single artifact. Given that the objective is to show straightforward enhancements to artifact functionality, this change was decided against. Moreover, fully refactoring the code required testing different versions for implementation and selecting the best one. Overall, the final artifact is more stable, secure, and efficient than now when compared to where it was in the beginning of the process. It will serve as a good display of my ability to engage in backend development, especially in regard to databases.
 </p>
 
-- [Origin artifact files]()
-- [Origin build code]()
-- [Enhanced artifact files]()
-- [Enhanced artifact code]()
+- [Origin artifact files](https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Origin%20Artifacts/Origin%20Artifact%203/CS%20340%20Project%20Two_King/CS%20340%20Project%20Two_King)
+- [Origin build code](https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Origin%20Artifacts/Origin%20Artifact%203/CS%20340%20Project%20Two_King/CS%20340%20Project%20Two_King/animal_shelter_Project1.py)
+- [Enhanced artifact files](https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Enhanced%20Artifacts/Artifact%203/CS%20340%20Project%20Two_King)
+- [Enhanced artifact code](https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Enhanced%20Artifacts/Artifact%203/CS%20340%20Project%20Two_King/animal_shelter_Project1.py)
