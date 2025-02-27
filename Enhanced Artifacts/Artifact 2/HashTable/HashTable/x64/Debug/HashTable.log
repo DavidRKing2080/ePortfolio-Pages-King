@@ -1,7 +1,0 @@
-﻿  CSVparser.cpp
-D:\School\Bachelors\CS 499 - Computer Science Capstone\CS499 Coursework\Enhanced Artifacts\Artifact 2\HashTable\CSVparser.cpp(116,27): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
-D:\School\Bachelors\CS 499 - Computer Science Capstone\CS499 Coursework\Enhanced Artifacts\Artifact 2\HashTable\CSVparser.cpp(121,26): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
-D:\School\Bachelors\CS 499 - Computer Science Capstone\CS499 Coursework\Enhanced Artifacts\Artifact 2\HashTable\CSVparser.cpp(203,24): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
-  HashTable.cpp
-  Generating Code...
-  HashTable.vcxproj -> D:\School\Bachelors\CS 499 - Computer Science Capstone\CS499 Coursework\Enhanced Artifacts\Artifact 2\HashTable\x64\Debug\HashTable.exe
