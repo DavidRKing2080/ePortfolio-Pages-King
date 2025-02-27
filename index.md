@@ -2,9 +2,9 @@
 title: David King's ePortfolio
 ---
 
-## CS 499 Computer Science Capstone
+## Welcome!
 
-I'm currently testing the homepage feature by writing a faux description. Please ignore blah blah.
+This ePortfolio showcases the learning and professional growth I have engaged in over the course of studying for my Bachelor's degree.
 
 ## Professional Self-Assessment
 
