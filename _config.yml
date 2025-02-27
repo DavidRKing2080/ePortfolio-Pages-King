@@ -4,7 +4,7 @@ author: "David King"
 description: "A showcase of my bachelor's degree work, including all work for the CS 499 Capstone Course."
 
 # Theme
-theme: minima
+theme: jekll-theme-cayman
 
 # Customization
 show_excerpts: true  # Enables post previews instead of full content
