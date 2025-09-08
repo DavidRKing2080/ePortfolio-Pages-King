@@ -1,14 +1,39 @@
 ---
 layout: default
 title: "David King • Portfolio"
-description: "Data & ML-minded Python developer building practical, well-documented projects."
+description: "Software Engineer with expertise in full-stack development, database design, and secure coding practices."
 ---
 
 # David King
 
-**Python Developer • Data Analysis & ML • Clean, reproducible projects**
+**Software Engineer | Full-Stack Development | Secure Coding | Cloud Deployment**
 
-I build practical, well-documented Python projects using NumPy, Pandas, Matplotlib, SciPy, and scikit-learn. I care about readable code, clear results, and reproducibility.
+📍 Chesapeake, VA • 📧 davidrking2080@gmail.com • 📱 757-848-6126  
+🔗 [GitHub](https://github.com/davidrking2080) • [LinkedIn](https://www.linkedin.com/in/david-king-8658b1358/)
+
+---
+
+## Professional Summary
+Software Engineer with a strong foundation in full-stack development, database design, and secure coding practices. Skilled in C++, Java, JavaScript, and Python, with hands-on experience building applications using the MEAN stack and deploying solutions through Azure. Adept at troubleshooting, implementing secure coding practices, and collaborating in agile environments. Passionate about building scalable, efficient, and user-focused software systems:contentReference[oaicite:0]{index=0}.
+
+---
+
+## Technical Skills
+- **Languages:** Python, Java, JavaScript, C++, C#:contentReference[oaicite:1]{index=1}  
+- **Frameworks & Tools:** MEAN Stack, Node.js, Express, Angular, MySQL, NoSQL, Git, Azure:contentReference[oaicite:2]{index=2}  
+- **Cybersecurity:** Secure coding, DevSecOps, penetration testing (Kali Linux):contentReference[oaicite:3]{index=3}  
+- **Other:** Agile/Scrum, database design, REST APIs:contentReference[oaicite:4]{index=4}  
+
+---
+
+## Education
+- **B.S. in Computer Science**, Southern New Hampshire University – *March 2025*  
+  Focus: Full-stack development, agile methodologies, and secure coding practices:contentReference[oaicite:5]{index=5}  
+
+- **Cybersecurity Career Studies Certificate**, Tidewater Community College – *2019*  
+  Specialization: Penetration testing, network security, secure coding:contentReference[oaicite:6]{index=6}  
+
+- **A.S. in Computer Science**, Tidewater Community College – *2018*:contentReference[oaicite:7]{index=7}
 
 ---
 
@@ -16,24 +41,4 @@ I build practical, well-documented Python projects using NumPy, Pandas, Matplotl
 - **Degree Work (Capstone Artifacts)** — Buffer Overflow Checker, Hash Table, Database Manager  
   👉 [/ePortfolio-Pages-King/degree-work/](/ePortfolio-Pages-King/degree-work/)
 
-<!-- Add new items here as you publish them -->
-<!-- Example:
-- **Iris ML Pipeline** — EDA → model → evaluation with visuals  
-  👉 Code (GitHub) • Writeup
--->
-
----
-
-## Skills Snapshot
-**Languages:** Python, C  
-**Data/ML:** NumPy, Pandas, Matplotlib, SciPy, scikit-learn  
-**Dev Tools:** Git/GitHub, Virtual Envs (uv/venv), CLI (PowerShell)
-
----
-
-## Quick Links
-- **GitHub:** https://github.com/davidrking2080  
-- **LinkedIn:** (add your link)  
-- **Email:** (your email)  
-- **Résumé (PDF):** (place `resume.pdf` in repo root and link it)
-
+*(Independent projects will be added here soon.)*
