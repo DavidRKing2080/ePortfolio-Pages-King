@@ -14,26 +14,26 @@ Software Engineering | Full-Stack Development | Secure Coding | Web Development
 ---
 
 ## Professional Summary
-Software Engineer with a strong foundation in full-stack development, database design, and secure coding practices. Skilled in C++, Java, JavaScript, and Python, with hands-on experience building applications using the MEAN stack and deploying solutions through Azure. Adept at troubleshooting, implementing secure coding practices, and collaborating in agile environments. Passionate about building scalable, efficient, and user-focused software systems:contentReference[oaicite:0]{index=0}.
+Software Engineer with a strong foundation in full-stack development, database design, and secure coding practices. Skilled in C++, Java, JavaScript, and Python, with hands-on experience building applications using the MEAN stack and deploying solutions through Azure. Adept at troubleshooting, implementing secure coding practices, and collaborating in agile environments. Passionate about building scalable, efficient, and user-focused software systems.
 
 ---
 
 ## Technical Skills
-- **Languages:** Python, Java, JavaScript, C++, C#:contentReference[oaicite:1]{index=1}  
-- **Frameworks & Tools:** MEAN Stack, Node.js, Express, Angular, MySQL, NoSQL, Git, Azure:contentReference[oaicite:2]{index=2}  
-- **Cybersecurity:** Secure coding, DevSecOps, penetration testing (Kali Linux):contentReference[oaicite:3]{index=3}  
-- **Other:** Agile/Scrum, database design, REST APIs:contentReference[oaicite:4]{index=4}  
+- **Languages:** Python, Java, JavaScript, C++, C#  
+- **Frameworks & Tools:** MEAN Stack, Node.js, Express, Angular, MySQL, NoSQL, Git, Azure  
+- **Cybersecurity:** Secure coding, DevSecOps, penetration testing (Kali Linux)  
+- **Other:** Agile/Scrum, database design, REST APIs  
 
 ---
 
 ## Education
 - **B.S. in Computer Science**, Southern New Hampshire University – *March 2025*  
-  Focus: Full-stack development, agile methodologies, and secure coding practices:contentReference[oaicite:5]{index=5}  
+  Focus: Full-stack development, agile methodologies, and secure coding practices  
 
 - **Cybersecurity Career Studies Certificate**, Tidewater Community College – *2019*  
-  Specialization: Penetration testing, network security, secure coding:contentReference[oaicite:6]{index=6}  
+  Specialization: Penetration testing, network security, secure coding  
 
-- **A.S. in Computer Science**, Tidewater Community College – *2018*:contentReference[oaicite:7]{index=7}
+- **A.S. in Computer Science**, Tidewater Community College – *2018*  
 
 ---
 
