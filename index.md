@@ -9,10 +9,10 @@ description: "Software Engineer focused on full-stack development, secure coding
 **Software Engineer — Full-Stack • Secure Coding • Web Development**
 
 <p>
-  <a class="button" href="/ePortfolio-Pages-King/projects/">Projects</a>
+  <a class="button--ghost" href="/ePortfolio-Pages-King/projects/">Projects</a>
   <a class="button--ghost" href="https://github.com/davidrking2080">GitHub</a>
   <a class="button--ghost" href="https://www.linkedin.com/in/david-king-8658b1358/">LinkedIn</a>
-  <a class="button" href="/ePortfolio-Pages-King/resume.pdf">Résumé</a>
+  <a class="button--ghost" href="/ePortfolio-Pages-King/resume.pdf">Résumé</a>
 </p>
 
 📍 Chesapeake, VA • 📧 davidrking2080@gmail.com • 📱 757-848-6126
