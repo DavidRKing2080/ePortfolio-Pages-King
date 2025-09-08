@@ -1,6 +1,6 @@
 # Projects
 
-<a class="button--ghost" href="/ePortfolio-Pages-King/index/">Home</a>
+<a class="button--ghost" href="/ePortfolio-Pages-King/">Home</a>
 
 Projects coming soon!
 
