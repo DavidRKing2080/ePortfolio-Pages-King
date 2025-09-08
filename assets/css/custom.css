@@ -46,13 +46,13 @@ a:hover {
 
 /* Hover effects */
 .button:hover {
-  background: #1e40af; /* slightly darker blue */
+  background: #059669; /* slightly darker blue */
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
 }
 
 .button--ghost:hover {
-  background: #2563eb; /* fill blue */
+  background: #10b981; /* fill blue */
   color: #fff;         /* white text */
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
