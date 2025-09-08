@@ -1,0 +1,45 @@
+:root {
+  --accent: #2563eb; /* main button color */
+  --maxw: 72ch;      /* content width for readability */
+}
+
+main, .page-content, .post {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Filled button */
+.button {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+/* Outlined button */
+.button--ghost {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.button:hover,
+.button--ghost:hover {
+  opacity: 0.9;
+}
