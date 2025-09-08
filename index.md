@@ -6,7 +6,7 @@ description: "Software Engineer with expertise in full-stack development, databa
 
 # David King
 
-**Software Engineer | Full-Stack Development | Secure Coding | Cloud Deployment**
+Software Engineering | Full-Stack Development | Secure Coding | Web Development
 
 📍 Chesapeake, VA • 📧 davidrking2080@gmail.com • 📱 757-848-6126  
 🔗 [GitHub](https://github.com/davidrking2080) • [LinkedIn](https://www.linkedin.com/in/david-king-8658b1358/)
