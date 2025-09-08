@@ -1,44 +1,49 @@
 ---
 layout: default
-title: "David King • Portfolio"
-description: "Software Engineer with expertise in full-stack development, database design, and secure coding practices."
+title: "David King • Software Engineer"
+description: "Software Engineer focused on full-stack development, secure coding, and clean, reproducible builds."
 ---
 
 # David King
 
-Software Engineering | Full-Stack Development | Secure Coding | Web Development
+**Software Engineer — Full-Stack • Secure Coding • Web Development**
 
-📍 Chesapeake, VA • 📧 davidrking2080@gmail.com • 📱 757-848-6126  
-🔗 [GitHub](https://github.com/davidrking2080) • [LinkedIn](https://www.linkedin.com/in/david-king-8658b1358/)
+<p>
+  <a class="button" href="/ePortfolio-Pages-King/projects/">Projects</a>
+  <a class="button--ghost" href="https://github.com/davidrking2080">GitHub</a>
+  <a class="button--ghost" href="https://www.linkedin.com/in/david-king-8658b1358/">LinkedIn</a>
+  <a class="button" href="/ePortfolio-Pages-King/resume.pdf">Résumé</a>
+</p>
 
----
-
-## Professional Summary
-Software Engineer with a strong foundation in full-stack development, database design, and secure coding practices. Skilled in C++, Java, JavaScript, and Python, with hands-on experience building applications using the MEAN stack and deploying solutions through Azure. Adept at troubleshooting, implementing secure coding practices, and collaborating in agile environments. Passionate about building scalable, efficient, and user-focused software systems.
-
----
-
-## Technical Skills
-- **Languages:** Python, Java, JavaScript, C++, C#  
-- **Frameworks & Tools:** MEAN Stack, Node.js, Express, Angular, MySQL, NoSQL, Git, Azure  
-- **Cybersecurity:** Secure coding, DevSecOps, penetration testing (Kali Linux)  
-- **Other:** Agile/Scrum, database design, REST APIs  
+📍 Chesapeake, VA • 📧 davidrking2080@gmail.com • 📱 757-848-6126
 
 ---
 
-## Education
-- **B.S. in Computer Science**, Southern New Hampshire University – *March 2025*  
-  Focus: Full-stack development, agile methodologies, and secure coding practices  
-
-- **Cybersecurity Career Studies Certificate**, Tidewater Community College – *2019*  
-  Specialization: Penetration testing, network security, secure coding  
-
-- **A.S. in Computer Science**, Tidewater Community College – *2018*  
+## About
+I build practical, well-documented software with an emphasis on secure coding and maintainability. Comfortable across the stack with **Python, Java, JavaScript, and C++**, and experienced delivering apps with the **MEAN stack**, REST APIs, and **Azure** deployment. I like readable code, defensible designs, and reproducible environments.
 
 ---
 
-## Featured Projects
+## Core Skills
+**Languages:** Python, Java, JavaScript, C++, C#  
+**Frameworks & Tools:** Node.js, Express, Angular, MySQL, NoSQL, Git, Azure  
+**Security:** Secure coding, DevSecOps practices, Kali Linux  
+**Practices:** Agile/Scrum, code review, testing, database design
+
+---
+
+## Featured Work
+- **Projects index** — live portfolio of current builds and write-ups  
+  👉 [/ePortfolio-Pages-King/projects/](/ePortfolio-Pages-King/projects/)
+
 - **Degree Work (Capstone Artifacts)** — Buffer Overflow Checker, Hash Table, Database Manager  
   👉 [/ePortfolio-Pages-King/degree-work/](/ePortfolio-Pages-King/degree-work/)
 
-*(Independent projects will be added here soon.)*
+---
+
+## Education & Certifications
+- **B.S., Computer Science — Southern New Hampshire University (Mar 2025)**
+- **Cybersecurity Career Studies Certificate — Tidewater Community College (2019)**
+- **A.S., Computer Science — Tidewater Community College (2018)**
+- **CompTIA Security+ (2018)**
+
