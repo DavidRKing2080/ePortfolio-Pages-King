@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David King — Degree Work</title>
+  <meta name="description" content="David King's degree work: self‑assessment, CS 499 outcomes, and three enhanced artifacts with origins and improved implementations." />
+  <meta property="og:title" content="David King — Degree Work" />
+  <meta property="og:description" content="Self‑assessment, CS 499 outcomes, and three enhanced artifacts with origins and improved implementations." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0f19" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%230bf'%3E%3C/circle%3E%3Ctext x='50' y='58' text-anchor='middle' font-family='monospace' font-size='56' fill='white'%3E{\u003C%3C}%3C/text%3E%3C/svg%3E"/>
+  <style>
+    :root { --bg:#0b0f19; --bg-soft:#0f1629; --card:rgba(255,255,255,.03); --text:#e6e9ef; --muted:#98a2b3; --accent:#60a5fa; --accent-2:#a78bfa; --ring:#1d4ed8; --maxw:1200px; --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.03); }
+    @media (prefers-color-scheme: light) { :root { --bg:#f6f7fb; --bg-soft:#fff; --card:rgba(0,0,0,.03); --text:#0b0f19; --muted:#475467; --accent:#2563eb; --accent-2:#7c3aed; --ring:#3b82f6; } body[data-theme="dark"] { --bg:#0b0f19; --bg-soft:#0f1629; --card:rgba(255,255,255,.03); --text:#e6e9ef; --muted:#98a2b3; --accent:#60a5fa; --accent-2:#a78bfa; --ring:#1d4ed8; } }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,"Helvetica Neue",Arial,"Noto Sans";background:radial-gradient(1200px 600px at 80% -10%, rgba(96,165,250,.15), transparent 60%),radial-gradient(900px 500px at -10% 20%, rgba(167,139,250,.12), transparent 50%),var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(255,255,255,.06);background:linear-gradient(to bottom, rgba(11,15,25,.8), rgba(11,15,25,.4));backdrop-filter:blur(8px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .logo{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:var(--shadow)}
+    nav a{opacity:.85;padding:8px 12px;border-radius:10px}
+    nav a:hover{opacity:1;background:var(--card)}
+    .actions{display:flex;gap:10px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:var(--card);box-shadow:var(--shadow);cursor:pointer;font-weight:600;color:var(--text)}
+    .hero{padding:56px 0 24px}
+    .title{font-size:clamp(28px,3.2vw,44px);line-height:1.1;margin:4px 0 8px}
+    .lead{color:var(--muted);max-width:70ch}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+    .card{grid-column:span 12;border-radius:16px;border:1px solid rgba(255,255,255,.08);background:var(--card);box-shadow:var(--shadow);padding:20px}
+    @media (min-width:720px){.half{grid-column:span 6}}
+    h2.section{font-size:clamp(22px,2vw,28px);margin:24px 0 12px}
+    .muted{color:var(--muted)}
+    .timeline{position:relative;padding-left:20px}
+    .timeline:before{content:"";position:absolute;top:6px;bottom:6px;left:8px;width:2px;background:linear-gradient(var(--accent),var(--accent-2));border-radius:2px}
+    .time-item{position:relative;margin:0 0 14px;padding-left:16px}
+    .time-item:before{content:"";position:absolute;left:-2px;top:6px;width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+    .embed{position:relative;padding-top:56.25%;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+    .embed iframe{position:absolute;inset:0;width:100%;height:100%}
+    footer{padding:36px 0 60px;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#content">Skip to content</a>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7v7H4zM13 13h7v7h-7zM13 4l7 7M4 13l7 7"></path></svg>
+        </div>
+        <span>David King</span>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="#self">Self‑Assessment</a>
+        <a href="#outcomes">CS 499 Outcomes</a>
+        <a href="#artifacts">Artifacts</a>
+      </nav>
+      <div class="actions">
+        <button id="themeToggle" class="btn" aria-label="Toggle theme">Toggle Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container">
+        <h1 class="title">Degree Work</h1>
+        <p class="lead">Undergraduate capstone and coursework artifacts: self‑assessment, outcomes, and three enhanced projects with source links.</p>
+      </div>
+    </section>
+
+    <section id="self">
+      <div class="container grid">
+        <article class="card">
+          <h2 class="section">Professional Self‑Assessment</h2>
+          <p>My coding journey began in high school through a STEM software engineering track, where I learned Java in Eclipse and built small apps and games. I kept tinkering through my A.S. in Computer Science at Tidewater Community College, picking up C++ and Python. While working as an office specialist at the City of Chesapeake’s Department of Human Services, I redesigned parts of the WordPress site, teaching myself additional HTML along the way. I also completed a Cybersecurity Career Studies Certificate during this time.</p>
+          <p>At Southern New Hampshire University, I deepened my skills in databases (MySQL), secure coding, and testing (e.g., dynamic testing via Maven). Courses emphasized Agile practices and converting stakeholder requests into features. I also explored AI/ML concepts, including path‑finding, and consistently prioritized security via input validation and dependency review.</p>
+          <p>This ePortfolio highlights three artifacts demonstrating growth in software design, data structures, and databases. I strengthened each with improved error handling, scalability, input validation, and clearer structure and documentation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="outcomes">
+      <div class="container grid">
+        <article class="card">
+          <h2 class="section">CS 499 Course Outcomes</h2>
+          <ul>
+            <li>Build collaborative environments that support decision‑making across diverse audiences.</li>
+            <li>Communicate professionally — oral, written, and visual — for the intended audience.</li>
+            <li>Design and evaluate algorithmic solutions while managing trade‑offs.</li>
+            <li>Apply modern techniques, skills, and tools to deliver computing solutions that create value.</li>
+            <li>Develop a security mindset to anticipate exploits and mitigate vulnerabilities.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="review">
+      <div class="container grid">
+        <article class="card">
+          <h2 class="section">Code Review</h2>
+          <p>My review analyzes three artifacts for functionality, structure, and security, and identifies improvements for each. It is organized into three sections with before/after discussion and enhancement rationales.</p>
+          <div class="embed" aria-label="Code Review video">
+            <iframe src="https://www.youtube.com/embed/QpnPdSksR3w" title="Code Review" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="artifacts">
+      <div class="container grid">
+        <article class="card">
+          <h2 class="section">Artifact 1: Software Engineering & Design</h2>
+          <p>The enhanced artifact is a buffer overflow checker from CS 405 (Secure Coding). I expanded coverage of types and edge values, modularized common logic, and improved error handling and messaging. The goal was to demonstrate a security‑first approach with robust testing and clearer code.</p>
+          <ul>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Origin%20Artifacts/Origin%20Artifact%201/CS%20405%20Module%201%20Assignment_King">Origin artifact files →</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Origin%20Artifacts/Origin%20Artifact%201/CS%20405%20Module%201%20Assignment_King/CS%20405%20Module%201%20Assignment_King.cpp">Origin build code →</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Enhanced%20Artifacts/Artifact%201/CS%20405%20Module%201%20Assignment_King">Enhanced artifact files →</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Enhanced%20Artifacts/Artifact%201/CS%20405%20Module%201%20Assignment_King/CS%20405%20Module%201%20Assignment_King.cpp">Enhanced artifact code →</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="section">Artifact 2: Algorithms & Data Structures</h2>
+          <p>I reworked a CS 300 hash table implementation: moving from chaining to open addressing with linear probing, adding dynamic resizing, and using multiplicative string hashing. These changes reduced memory fragmentation, improved performance, and simplified the codebase for maintenance.</p>
+          <ul>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Origin%20Artifacts/Origin%20Artifact%202/HashTable">Origin artifact files →</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Origin%20Artifacts/Origin%20Artifact%202/HashTable/HashTable.cpp">Origin build code →</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Enhanced%20Artifacts/Artifact%202/HashTable">Enhanced artifact files →</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Enhanced%20Artifacts/Artifact%202/HashTable/HashTable.cpp">Enhanced artifact code →</a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="section">Artifact 3: Databases</h2>
+          <p>I improved a CS 340 MongoDB manager for an animal shelter by adding input validation, creating indexes for frequently queried fields, and refactoring into modular components. The result is more secure, efficient, and maintainable.</p>
+          <ul>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Origin%20Artifacts/Origin%20Artifact%203/CS%20340%20Project%20Two_King/CS%20340%20Project%20Two_King">Origin artifact files →</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Origin%20Artifacts/Origin%20Artifact%203/CS%20340%20Project%20Two_King/CS%20340%20Project%20Two_King/animal_shelter_Project1.py">Origin build code →</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/tree/main/Enhanced%20Artifacts/Artifact%203/CS%20340%20Project%20Two_King">Enhanced artifact files →</a></li>
+            <li><a target="_blank" rel="noreferrer" href="https://github.com/DavidRKing2080/ePortfolio-Pages-King/blob/main/Enhanced%20Artifacts/Artifact%203/CS%20340%20Project%20Two_King/animal_shelter_Project1.py">Enhanced artifact code →</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+      <div>
+        <div>© <span id="year"></span> David King</div>
+        <div class="muted">Built with the same dark theme as my portfolio.</div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="/">Back to portfolio</a>
+        <a class="btn" href="https://github.com/DavidRKing2080" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/david-king-8658b1358/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year + theme toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const prefersDark = matchMedia('(prefers-color-scheme: dark)').matches;
+    const saved = localStorage.getItem('theme');
+    if (!saved && prefersDark) document.body.dataset.theme = 'dark';
+    if (saved) document.body.dataset.theme = saved;
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const cur = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.body.dataset.theme = cur; localStorage.setItem('theme', cur);
+    });
+    // Smooth scroll for this page
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) { e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); history.pushState(null,'','#'+id); }
+      });
+    });
+  </script>
+</body>
+</html>
