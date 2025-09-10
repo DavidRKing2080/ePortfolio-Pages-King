@@ -295,12 +295,6 @@
     <div class="card">
       <p>You can email me directly or use the form below. Messages go to my inbox instantly.</p>
 
-      <div class="hero-cta" style="margin-bottom:16px">
-        <a class="btn" id="emailBtn"
-           href="mailto:davidrking2080@gmail.com?subject=Interview%20Opportunity%20for%20Software%20Engineer&body=Hi%20David%2C%0A%0A[Your%20message%20here]%0A%0A-%20[Your%20Name]">Email me</a>
-        <button class="btn" type="button" id="copyEmail">Copy email</button>
-      </div>
-
       <!-- Contact Form (Formspree) -->
       <form id="contactForm" class="row" novalidate>
         <input type="hidden" name="_subject" value="Portfolio contact — David King" />
@@ -337,7 +331,6 @@
         <p class="subtle">By sending, you agree this message will be emailed to me. I won’t share your contact info.</p>
       </form>
 
-      <p class="subtle" id="emailHelp">If the email button doesn't open your mail app, use <strong>Copy email</strong> and paste into Gmail or Outlook.</p>
     </div>
   </div>
 </section>
@@ -394,6 +387,7 @@
     });
     
   // Copy-to-clipboard fallback for email
+    /*
   function copyEmail(){
     const email = 'davidrking2080@gmail.com';
     navigator.clipboard?.writeText(email).then(() => {
@@ -404,7 +398,8 @@
   }
   document.getElementById('copyEmail')?.addEventListener('click', copyEmail);
   document.getElementById('copyEmailTop')?.addEventListener('click', copyEmail);
-
+*/
+    
   // Contact form submit (Formspree)
   const form = document.getElementById('contactForm');
   if (form) {
