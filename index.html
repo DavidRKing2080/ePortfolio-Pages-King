@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David King — Software Engineer</title>
+  <meta name="description" content="Portfolio of David King: projects, skills, education, certifications, and contact." />
+  <meta property="og:title" content="David King — Software Engineer" />
+  <meta property="og:description" content="Projects, skills, education, certifications, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="theme-color" content="#0b0f19" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%230bf'%3E%3C/circle%3E%3Ctext x='50' y='58' text-anchor='middle' font-family='monospace' font-size='56' fill='white'%3E{\u003C%3C}%3C/text%3E%3C/svg%3E"/>
+  <style>
+    /* ---------- Root Theme ---------- */
+    :root {
+      --bg: #0b0f19;
+      --bg-soft: #0f1629;
+      --card: rgba(255,255,255,0.03);
+      --text: #e6e9ef;
+      --muted: #98a2b3;
+      --accent: #60a5fa; /* blue */
+      --accent-2: #a78bfa; /* violet */
+      --ring: #1d4ed8;
+      --maxw: 1200px;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.03);
+      --glass: backdrop-filter: blur(10px) saturate(140%);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f7fb;
+        --bg-soft: #ffffff;
+        --card: rgba(0,0,0,0.03);
+        --text: #0b0f19;
+        --muted: #475467;
+        --accent: #2563eb;
+        --accent-2: #7c3aed;
+        --ring: #3b82f6;
+      }
+      body[data-theme="dark"] { /* Force dark if toggled */
+        --bg: #0b0f19; --bg-soft:#0f1629; --card: rgba(255,255,255,0.03); --text:#e6e9ef; --muted:#98a2b3; --accent:#60a5fa; --accent-2:#a78bfa; --ring:#1d4ed8;
+      }
+    }
+
+    /* ---------- Base ---------- */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(96,165,250,.15), transparent 60%),
+                  radial-gradient(900px 500px at -10% 20%, rgba(167,139,250,.12), transparent 50%), var(--bg);
+      color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+    .row { display: grid; gap: 24px; }
+
+    /* ---------- Header ---------- */
+    header {
+      position: sticky; top: 0; z-index: 40; border-bottom: 1px solid rgba(255,255,255,.06); background: linear-gradient(to bottom, rgba(11,15,25,.8), rgba(11,15,25,.4));
+      backdrop-filter: blur(8px);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight: 700; letter-spacing:.3px }
+    .logo { width: 28px; height: 28px; border-radius: 8px; display:grid; place-items:center; background:
+      linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: var(--shadow); }
+    .logo svg { width: 18px; height: 18px; }
+    nav a { opacity:.8; padding:8px 12px; border-radius: 10px; }
+    nav a:hover { opacity:1; background: var(--card); }
+    .actions { display:flex; align-items:center; gap:10px }
+    .btn {
+      display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,.08);
+      background: var(--card); box-shadow: var(--shadow); cursor:pointer; font-weight:600; color:var(--text);
+    }
+    .btn:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+
+    /* ---------- Hero ---------- */
+    .hero { padding: 72px 0 32px; }
+    .tag { display:inline-block; padding:6px 12px; border-radius:999px; background: rgba(96,165,250,.12); color:#cfe4ff; border:1px solid rgba(96,165,250,.25); font-weight:600; }
+    h1 { font-size: clamp(32px, 3.5vw, 54px); line-height: 1.1; margin: 16px 0 12px; letter-spacing: -0.02em; }
+    .lead { font-size: clamp(16px, 1.3vw, 18px); color: var(--muted); max-width: 70ch; }
+    .hero-cta { display:flex; gap:12px; margin-top: 24px; flex-wrap: wrap; }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); border: none; color: white; }
+    .btn-ghost { background: transparent; }
+
+    /* ---------- Section ---------- */
+    section { padding: 48px 0; }
+    .section-title { font-size: clamp(22px, 2vw, 28px); margin: 0 0 18px; }
+    .subtle { color: var(--muted); }
+
+    /* ---------- Cards/Grid ---------- */
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(12, 1fr); }
+    .card { grid-column: span 12; border-radius: var(--radius); border: 1px solid rgba(255,255,255,.08); background: var(--card); box-shadow: var(--shadow); padding: 20px; position: relative; }
+    @media (min-width: 720px) {
+      .card.half { grid-column: span 6; }
+      .card.third { grid-column: span 4; }
+    }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+
+    /* ---------- Project Cards ---------- */
+    .project { display:flex; gap:16px; align-items:flex-start; }
+    .project .thumb { width:72px; height:72px; border-radius:14px; background: linear-gradient(135deg, rgba(96,165,250,.25), rgba(167,139,250,.2)); border:1px solid rgba(255,255,255,.08); flex: 0 0 auto; }
+    .project .meta { display:flex; gap:10px; flex-wrap:wrap; margin-top:8px; }
+    .chip { font-size: 12px; padding:6px 10px; border-radius: 999px; border:1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.04); }
+    .project a.more { display:inline-flex; align-items:center; gap:8px; margin-top: 12px; opacity:.9 }
+    .project a.more:hover { opacity:1 }
+
+    /* ---------- Skills ---------- */
+    .skills { display:flex; flex-wrap:wrap; gap:10px; }
+    .skill { padding:8px 12px; border-radius:10px; background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); font-weight:600; }
+
+    /* ---------- Timeline ---------- */
+    .timeline { position: relative; padding-left: 20px; }
+    .timeline:before { content:""; position:absolute; top:6px; bottom:6px; left:8px; width:2px; background: linear-gradient(var(--accent), var(--accent-2)); border-radius:2px; }
+    .time-item { position: relative; margin: 0 0 14px 0; padding-left: 16px; }
+    .time-item:before { content:""; position:absolute; left:-2px; top:6px; width:10px; height:10px; border-radius:50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow:0 0 0 3px rgba(96,165,250,.15); }
+    .time-item h4 { margin: 0 0 4px }
+    .time-item .when { font-size: 13px; color: var(--muted); }
+
+    /* ---------- Footer ---------- */
+    footer { padding: 36px 0 60px; color: var(--muted); border-top:1px solid rgba(255,255,255,.06) }
+    .socials { display:flex; gap:12px; }
+    .socials a { padding:10px; border-radius:10px; border:1px solid rgba(255,255,255,.08); background: var(--card); }
+
+    /* ---------- Utility ---------- */
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+    .center { text-align: center; }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "David King",
+    "url": "https://DavidRKing2080.github.io/",
+    "sameAs": ["https://github.com/DavidRKing2080","https://www.linkedin.com/in/david-king-8658b1358/"],
+    "jobTitle": "Software Engineer",
+    "alumniOf": "Southern New Hampshire University",
+    "knowsAbout": ["Python","Java","JavaScript","C++","C#","Node.js","Express","Angular","MySQL","NoSQL","Azure","Secure coding","DevSecOps"],
+    "email": "mailto:davidrking2080@gmail.com"
+  }
+  </script>
+</head>
+<body>
+  <a href="#content" class="sr-only">Skip to content</a>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7v7H4zM13 13h7v7h-7zM13 4l7 7M4 13l7 7"></path></svg>
+        </div>
+        <span>David King</span>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="https://davidrking2080.github.io/ePortfolio-Pages-King/degree-work/" target="_blank" rel="noreferrer">Degree Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <a class="btn" href="resume.pdf" download>Download Résumé</a>
+        <button id="themeToggle" class="btn" aria-label="Toggle theme">Toggle Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container row">
+        <div>
+          <span class="tag">Open to work</span>
+          <h1>I build practical, well-documented software with an emphasis on secure coding and maintainability.</h1>
+          <p class="lead">Comfortable across the stack with Python, Java, JavaScript, and C++, and experienced delivering apps with the MEAN stack, REST APIs, and Azure deployment.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">See Projects</a>
+            <a class="btn btn-ghost" href="https://github.com/DavidRKing2080" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/david-king-8658b1358/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://davidrking2080.github.io/ePortfolio-Pages-King/degree-work/" target="_blank" rel="noreferrer">Degree Work →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Highlighted Projects</h2>
+        <p class="subtle">Coming soon! I’m curating and writing up project summaries.</p>
+        <div class="grid">
+          <article class="card half">
+            <div class="project">
+              <div class="thumb" aria-hidden="true"></div>
+              <div>
+                <h3>Coming soon!</h3>
+                <p>I'm selecting representative work and polishing writeups.</p>
+                <div class="meta">
+                  <span class="chip">Python</span>
+                  <span class="chip">Java</span>
+                  <span class="chip">JavaScript</span>
+                </div>
+                <a class="more" href="https://github.com/DavidRKing2080" target="_blank" rel="noreferrer">See my GitHub →</a>
+              </div>
+            </div>
+          </article>
+          <article class="card half">
+            <div class="project">
+              <div class="thumb" aria-hidden="true"></div>
+              <div>
+                <h3>Coming soon!</h3>
+                <p>Writeups will include architecture notes, security considerations, and tests.</p>
+                <div class="meta">
+                  <span class="chip">MEAN stack</span>
+                  <span class="chip">REST APIs</span>
+                  <span class="chip">Azure</span>
+                </div>
+                <a class="more" href="https://github.com/DavidRKing2080" target="_blank" rel="noreferrer">See my GitHub →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Core Skills</h2>
+        <div class="card">
+          <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">Java</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">C++</span>
+            <span class="skill">C#</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Express</span>
+            <span class="skill">Angular</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">NoSQL</span>
+            <span class="skill">Git</span>
+            <span class="skill">Azure</span>
+            <span class="skill">Secure coding</span>
+            <span class="skill">DevSecOps practices</span>
+            <span class="skill">Kali Linux</span>
+            <span class="skill">Agile/Scrum</span>
+            <span class="skill">Code review</span>
+            <span class="skill">Testing</span>
+            <span class="skill">Database design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="timeline">
+              <div class="time-item">
+                <h4>B.S., Computer Science • Southern New Hampshire University</h4>
+                <div class="when">Mar 2025</div>
+                <p>Focus on software engineering, security, and full-stack development.</p>
+              </div>
+              <div class="time-item">
+                <h4>Cybersecurity Career Studies Certificate • Tidewater Community College</h4>
+                <div class="when">2019</div>
+                <p>Coursework and labs emphasizing security fundamentals and practices.</p>
+              </div>
+              <div class="time-item">
+                <h4>A.S., Computer Science • Tidewater Community College</h4>
+                <div class="when">2018</div>
+                <p>Foundational CS curriculum with programming and systems.</p>
+              </div>
+              <div class="time-item">
+                <h4>CompTIA Security+</h4>
+                <div class="when">2018</div>
+                <p>CompTIA Security+ certification.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <div class="card">
+          <p>I'm actively looking for new-grad or junior software engineering roles. The fastest way to reach me is email.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="mailto:davidrking2080@gmail.com?subject=Interview%20Opportunity%20for%20Software%20Engineer">Email me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row" style="justify-content:space-between; align-items:center; grid-template-columns: 1fr auto;">
+        <div>
+          <div>© <span id="year"></span> David King. All rights reserved.</div>
+          <div class="subtle">Built with semantic HTML and a custom dark theme.</div>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/DavidRKing2080" aria-label="GitHub" target="_blank" rel="noreferrer" title="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58l-.02-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.11-.76.08-.75.08-.75 1.22.09 1.86 1.25 1.86 1.25 1.09 1.86 2.86 1.32 3.56 1.01.11-.8.43-1.32.78-1.62-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.25-3.22-.13-.31-.54-1.55.12-3.23 0 0 1.02-.33 3.34 1.23a11.6 11.6 0 0 1 6.08 0c2.32-1.56 3.34-1.23 3.34-1.23.66 1.68.25 2.92.12 3.23.78.84 1.25 1.91 1.25 3.22 0 4.61-2.81 5.63-5.49 5.93.44.38.83 1.11.83 2.24l-.01 3.32c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/david-king-8658b1358/" aria-label="LinkedIn" target="_blank" rel="noreferrer" title="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.84-2.2 3.78-2.2 4.04 0 4.79 2.66 4.79 6.12V24h-4v-7.38c0-1.76-.03-4.02-2.45-4.02-2.45 0-2.83 1.9-2.83 3.87V24h-4V8z"/></svg>
+          </a>
+          <a href="mailto:davidrking2080@gmail.com" aria-label="Email" title="Email">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle (dark by default)
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const saved = localStorage.getItem('theme');
+    if (!saved && prefersDark) document.body.dataset.theme = 'dark';
+    if (saved) document.body.dataset.theme = saved;
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const cur = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.body.dataset.theme = cur; localStorage.setItem('theme', cur);
+    });
+
+    // Smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.pushState(null, '', '#' + id);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
