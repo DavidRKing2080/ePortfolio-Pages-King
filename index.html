@@ -289,17 +289,59 @@
       </div>
     </section>
 
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Get in touch</h2>
-        <div class="card">
-          <p>I'm actively looking for new-grad or junior software engineering roles. The fastest way to reach me is email.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="mailto:davidrking2080@gmail.com?subject=Interview%20Opportunity%20for%20Software%20Engineer">Email me</a>
-          </div>
-        </div>
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Get in touch</h2>
+    <div class="card">
+      <p>You can email me directly or use the form below. Messages go to my inbox instantly.</p>
+
+      <div class="hero-cta" style="margin-bottom:16px">
+        <a class="btn" id="emailBtn"
+           href="mailto:davidrking2080@gmail.com?subject=Interview%20Opportunity%20for%20Software%20Engineer&body=Hi%20David%2C%0A%0A[Your%20message%20here]%0A%0A-%20[Your%20Name]">Email me</a>
+        <button class="btn" type="button" id="copyEmail">Copy email</button>
       </div>
-    </section>
+
+      <!-- Contact Form (Formspree) -->
+      <form id="contactForm" class="row" novalidate>
+        <input type="hidden" name="_subject" value="Portfolio contact — David King" />
+        <!-- Honeypot -->
+        <div class="sr-only">
+          <label>Leave this field empty
+            <input name="_gotcha" tabindex="-1" autocomplete="off"/>
+          </label>
+        </div>
+
+        <div class="card">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name"
+                 style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text)"/>
+        </div>
+
+        <div class="card">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com"
+                 style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text)"/>
+        </div>
+
+        <div class="card">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="How can I help?"
+                    style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text)"></textarea>
+        </div>
+
+        <div class="card" style="display:flex;gap:12px;align-items:center;">
+          <button class="btn btn-primary" type="submit" id="sendBtn">Send message</button>
+          <span class="subtle" id="formStatus"></span>
+        </div>
+
+        <p class="subtle">By sending, you agree this message will be emailed to me. I won’t share your contact info.</p>
+      </form>
+
+      <p class="subtle" id="emailHelp">If the email button doesn't open your mail app, use <strong>Copy email</strong> and paste into Gmail or Outlook.</p>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <footer>
@@ -350,6 +392,52 @@
         }
       });
     });
+    
+  // Copy-to-clipboard fallback for email
+  function copyEmail(){
+    const email = 'davidrking2080@gmail.com';
+    navigator.clipboard?.writeText(email).then(() => {
+      const h = document.getElementById('emailHelp');
+      if (h) { h.textContent = 'Copied to clipboard: ' + email; }
+      else { alert('Copied: ' + email); }
+    }).catch(() => { alert('Email: ' + email); });
+  }
+  document.getElementById('copyEmail')?.addEventListener('click', copyEmail);
+  document.getElementById('copyEmailTop')?.addEventListener('click', copyEmail);
+
+  // Contact form submit (Formspree)
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      const btn = document.getElementById('sendBtn');
+      status.textContent = 'Sending…';
+      btn.disabled = true;
+      try {
+        const data = new FormData(form);
+        const endpoint = 'https://formspree.io/f/xvgblvzr';
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          status.textContent = 'Thanks! Your message has been sent.';
+          form.reset();
+        } else {
+          const json = await res.json().catch(() => ({}));
+          status.textContent = (json && json.errors)
+            ? json.errors.map(e=>e.message).join(', ')
+            : 'Something went wrong. Please email me directly.';
+        }
+      } catch (err) {
+        status.textContent = 'Network error. Please email me directly.';
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  }
   </script>
 </body>
 </html>
