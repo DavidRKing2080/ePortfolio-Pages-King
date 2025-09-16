@@ -1,0 +1,7 @@
+services:
+  scanner:
+    build: .
+    command: ["/scan", "--out", "/out/findings.json", "--min-cvss", "0"]
+    volumes:
+      - ./:/out
+      - ../some-project-to-scan:/scan:ro   # <-- change this
