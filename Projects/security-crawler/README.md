@@ -47,3 +47,16 @@ python -m venv .venv
 source .venv/bin/activate
 
 pip install -r requirements.txt
+```
+
+---
+
+## Usage / Demo
+
+Once installed, you can run the crawler against any project directory containing lockfiles or requirements files.
+
+<img width="1891" height="857" alt="security-crawler-terminal" src="https://github.com/user-attachments/assets/e7e76d3d-7902-4d13-8851-9e18b12710f7" />
+
+
+```bash
+python -m src.app /path/to/project --min-cvss 0
