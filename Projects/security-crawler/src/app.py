@@ -114,7 +114,7 @@ def main():
 
     # Console summary, optionally filter by VCSS
     filtered = {
-        k: [v for v in vs if (v.get("cvss") or 0) >= args.min_cvs]
+        k: [v for v in vs if (v.get("cvss") or 0) >= args.min_cvss]
         for k, vs in vulns_map.items()
     }
     if any(filtered.values()):
@@ -134,5 +134,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
     
